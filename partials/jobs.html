@@ -12,18 +12,18 @@
 
 <div class="col-md-4">
     <h3>Add a new job</h3>
-    <form ng-submit="addJob()" class="form-inline" role="form">
+    <form ng-submit="JobsFactory.addJob()" class="form-inline" role="form">
         <div class="form-group">
-            <input type="text" ng-model="jobTitle" class="form-control" placeholder="Enter job title">
+            <input type="text" ng-model="JobsFactory.jobTitle" class="form-control" placeholder="Enter job title">
         </div>
         <div class="form-group">
-            <textarea rows="3" ng-model="jobDescription" class="form-control" placeholder="Enter job description"></textarea>
+            <textarea rows="3" ng-model="JobsFactory.jobDescription" class="form-control" placeholder="Enter job description"></textarea>
         </div>
         <div class="form-group">
-            <input type="text" ng-model="jobSkills" class="form-control" placeholder="Enter job skill needed">
+            <input type="text" ng-model="JobsFactory.jobSkills" class="form-control" placeholder="Enter job skill needed">
         </div>
         <div class="form-group">
-            <input type="number" ng-model="jobPrice" class="form-control" placeholder="Enter job price">
+            <input type="number" ng-model="JobsFactory.jobPrice" class="form-control" placeholder="Enter job price">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
     </form>

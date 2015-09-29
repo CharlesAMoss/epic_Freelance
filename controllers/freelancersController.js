@@ -1,4 +1,4 @@
-jobBoard.controller('FreelancersCtrl', function FreelancersCtrl($scope) {
+jobBoard.controller('FreelancersCtrl', function FreelancersCtrl($scope, JobsFactory) {
 
     $scope.freelancers = [{
         name: "Samantha",
@@ -17,4 +17,8 @@ jobBoard.controller('FreelancersCtrl', function FreelancersCtrl($scope) {
         $scope.freelancerName = null;
         $scope.freelancerSkill = null;
     };
+
+    $scope.addJob = function(job) {
+        
+    }
 });
