@@ -20,14 +20,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <header ui-view="header"></header>
-    <div class="container">
 
+
+    <nav ui-view="header"></nav>
+
+    <div class="wrapper">
 
         <section  ui-view="body"></section>
 
-        <footer ui-view="footer" class="site__footer"></footer>
+
     </div>
+
+    <footer ui-view="footer" class="site__footer"></footer>
 
 </body>
 </html>
