@@ -1,34 +1,34 @@
 <!doctype html>
 <html lang="en" ng-app="jobBoard">
-    <head>
-        <meta charset="UTF-8">
-        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-        <title>friday</title>
+    <title>friday</title>
 
-        <script src="lib/angular.js"></script>
-        <script src="lib/angular-ui-router.js"></script>
-        <script src="app.js"></script>
-        <!-- // <script src="directives/myDirectives.js"></script>-->
-        <script src="controllers/freelancersController.js"></script> 
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <!-- // <script src="directives/myDirectives.js"></script>-->
+    <script src="controllers/FreelancersController.js"></script>
+    <script src="controllers/JobsController.js"></script>
+    <meta content="width=device-width" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header ui-view="header"></header>
+    <div class="container">
 
-        <meta content="width=device-width" name="viewport">
 
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-
-        <div class="wrapper">
-
-            <header ui-view="header"></header>
-
-            <section class="main group" ui-view="body"></section>
-
-        </div><!-- end of wrapper -->
+        <section  ui-view="body"></section>
 
         <footer ui-view="footer" class="site__footer"></footer>
+    </div>
 
-    </body>
+</body>
 </html>
 
 <!-- python -m SimpleHTTPServer -->
