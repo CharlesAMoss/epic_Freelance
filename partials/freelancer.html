@@ -1,0 +1,24 @@
+<div ng-show="freelancers.length">
+    <h1>Here are the freelancers:</h1>
+    <ul>
+        <li ng-repeat="item in freelancers">
+            <a href="#">{{ item.name }}</a>
+            <p>{{ item.skill }}</p>
+
+        </li>
+    </ul>
+</div>
+
+<div class="col-md-4">
+    <h3>Add a new course</h3>
+    <form ng-submit="addFreelancer()" class="form-inline" role="form">
+        <div class="form-group">
+            <input type="text" ng-model="freelancerName" class="form-control" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <input type="text" ng-model="freelancerSkill" class="form-control" placeholder="Enter your skill">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+</div>
